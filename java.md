@@ -32,12 +32,12 @@ It a software Which is used to convert high level language into low level langua
 4. It has high performance
 5. It is an efficient language
 6. It supports OPPS
-7. It supports multithreding(Multitasking)
+7. It supports multithreading(Multitasking)
 8. It is portable
-9. It is Robus (Widely Used)
+9. It is Robust (Widely Used)
 10.   It has a large community support
 11. It is strictly typed language 
-12. It is case sensative
+12. It is case-sensative
 13. It is architectural neutral language
 14. It is secure
 15. Highly performance
@@ -118,3 +118,85 @@ address of a memory variable.
      4. static Initializer
      5. non static Initializer
      6. class
+
+## Tokens 
+   1. This is the smallest component of any programming language which helps to write a program.
+   2. In , java we have follow tokens.
+      - keyword
+      - identifier 
+      - literals
+      - separator
+      - comments
+      - operators
+      - 
+   3. Keyword
+      - it is a predefined word 
+      - it has special meaning / own meaning all the keyword written in the lowercase.
+      - In , java we have 50+ keyword ---> Exactly 53
+      
+   4. Identifiers
+      - It is the name given to recognize class in java
+      - we cannot give any name we have to follow sum rules.
+      - Rules of identifiers
+        1. Cannot be started with number.
+        2. Only '$' and '_' are used as a special character apart from these no special character can be used in an identifier.
+        3. Spaces is not allowed in an identifier.
+        4. Keyword cannot be used as an identifier.
+   
+      - Conventions
+        1. it is not a rule of an identifier itr is just an industrial standard, which we should follow while 
+           giving to the identifiers.
+        2. Class Convention.
+           1. class should be written in upper Camel-case.
+           2. Every word first letter should be written in UpperCase
+           3. convention for interface is the same.
+        3. Method Convention 
+           1. lower camel case.
+           2. it means if it contains only one word it should be written 
+              in the lowercase  , but if it contains multiple word from the second word onwards first word of each letter
+              should be written in smallCase.
+           3. Same convention for variables is followed.
+      
+   5. Literals
+       1. it is a data pass by a programmer in a program.
+       2. In java there have 4 types of literals
+          1. Number ---> Types ----> Integer , Floating point
+          2. Character 
+          3. Boolean 
+          4. String
+          5. Number Literals:
+             1. it can be of two types 
+             2. 1. Integer 2. floating point
+          6. Character Literals
+             1. Anything which is enclosed within single quote and its length is exactly 1 is known as 
+                character literals.
+          7. Boolean Literals 
+             1. it represents a logical data or a condition.
+             2. it has two types 1. true 2. false
+             3. true and false is a keyword 
+          8. String literals 
+             1. Anything which is passed within double quote is known as String literals
+          9. separators 
+             1. it is used to separate one component to another.
+             2. , , ; , { } , : , () , . , 
+          
+          10. Comments
+              1. its is the non-executable code which is used to increase the readabilty of the code.
+              2. Types - Single Line , Multiline Comment
+              3. Example : // This code is not readable as it is a comment and not going to execute.
+              4. Example: /* 
+                 This is a 
+                 multi line comment
+                */
+          
+          11. Operators
+          
+
+
+
+
+
+          
+       
+       
+      
