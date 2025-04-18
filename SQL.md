@@ -83,8 +83,24 @@
           8. char ----> fixed size memory allocation.
           9. varchar ----> variable / Dynamic length memory allocation.
    - VARCHAR:
-          1. Same data type as char
-          2. It will follow the variable length of memory allocation
+      1. Same data type as char
+      2. It will follow the variable length of memory allocation
    - VARCHAR2
-          1. VARCHAR2(SIZE)
-          2. capacity (4000) character
+      1. VARCHAR2(SIZE)
+      2. capacity (4000) character
+   - DATE 
+      1. DD - MM - YYYY ---> 12-Apr-2025
+      2. DD - MM - YY   ----> 18-Apr-25
+      3. DATE are used to store dates in the above formats
+   - Large Object : it is used to store the huge amount of info.
+   - syntax LOB(Size) ----> capacity --> 4GB ---> 1GB ---> 64000 character
+      1. CLOB - Character Large Object : it is similar to varchar data type syntax ---> CLOB(Size)
+      2. BLOB - Binary Large Object : it is used to store the meta-data upto 4GB syntax -- BLOB(Size); 
+   - NUMBER
+      - it is used to store any type of numeric value.
+      - syntax : NUMBER(Precision , [Scale]-->Optional)
+        - precision -> it is used to determine the number of digits which are required
+          to store any Integer value.The range for the precision is 1 to 38.There is no default
+          value for precision. It is used to determine the number of digits which are required to store any decimal value within the decimal.
+        - The range of the scale is (-84 to 127)
+        - The default value of scale is 0.
