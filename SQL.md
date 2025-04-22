@@ -104,3 +104,41 @@
           value for precision. It is used to determine the number of digits which are required to store any decimal value within the decimal.
         - The range of the scale is (-84 to 127)
         - The default value of scale is 0.
+   - constraints 
+        - constraints are the rule that area used to rules and restriction of each column
+        - 1. UNIQUE
+          2. NULL AND NOT NULL
+          3. CHECK
+          4. PRIMARY KEY FOREIGN KEY
+      -  UNIQUE: It is used to avoid the repeated or duplicated value from the columns.
+      - syntax: UNIQUE
+      - NOT NUll : it is used to make the column is mandatory.
+      - CHECK CONSTRAINTS: It is used to assign the extra validation to the column by using the conditions.
+      - syntax : CHECK(Conditions)
+      - PRIMARY KEY : primary key is used to identify the unique records from the table.
+        1. properties of primary key .....
+        2. It is the combination of unique and the not null.
+        3. The primary key will not allow any repeated values and a duplicated values.
+        4. In a same table we need to have only one primary key.
+     - FOREiGN KEY : IT IS USE TO ESTABLISH A CONN BETWEEN THE MULTIPLE TABLE
+        5. It is not a combination of unique and not null
+        6. It will allow the empty cells and the repeated value
+        7. In a same table we can have up-to 255 foreign key
+        8. To become the foreign key it should be the primary key of another table.
+        9. The foreign key will be present in child table , but it actually belongs to parent table.
+        10. Foreign key also known as referential integrity constraints.
+   
+
+## statement in sql
+- writing a query is known as statement
+- mainly there are five statement in sql
+- DDL , DML , DCL , TCL , DQL ----> crud operation.
+- DQL 
+- it is used to fetch the data from table or database.
+- there are the four subcommands in a dql
+- 1. projection process of fetching the data from the table the selecting only the columns
+  3. Selection - The process of fetching the data from the table by selecting both rows and columns
+  4. joins - The process of fetching the data from multiple table simultaneously is known as joins.
+  5. select - select is a keyword which is used to display the data which has selected by projection selection and joins.
+  6. 
+           
