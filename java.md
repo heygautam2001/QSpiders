@@ -244,6 +244,54 @@ address of a memory variable.
       b = 25; initialize.
             or
       byte b = 34;
+## how declare multiple variable of same datatype.
+   1. syntax: 
+      - Datatypes identifier1 , identifier2 , identifier3 ....... identifier-n;
+      - ex : int a ;
+      - int b;
+      - int c;
+      int a , b , c;
+      - byte n1;
+      - double n2; 
+      - float n3;
+        byte n1 , double n2 , float n3; X XXX  not allowed error;
+      - syntax :
+          datatype identifier1 = value , identifier2 = value, identifier3 = value
+   ## types of variable.
+   1. Based on datatype
+      - primitive variable
+      - Non-primitive variable
+   2. based on scope
+      - Global variable i. static ii. non-static
+      - Local variable
+   # primitive datatype : 
+   - A variable which is used to store primitive variable. primitive variable has fixed size.
+   - ex : int a = 2 , byte b = 23 , float f = 2.6 ,  double a = 123.56845 
+
+   # Non primitive varible 
+   - it is used to store multi-value data
+   - it is a user defined - it is created with the help of non-primitive data type.
+   - Ex : Array , String , Object - syntax -> String s = null;
+
+   # Based on scope: 
+   - Global scope
+   - Local Scope
+   - Here scope means visibility of the variable
+   - Local variable
+     - A variable which is declared inside the method block or any other specific block.
+     - class demo{
+     - public static void main(String[] args){
+     - char a = 'e'; //local variable
+     - }
+     - }
+     - Rules of local variable:
+     - we cannot use it outside the block because local variable is visible only within 
+       the block where it is declared.
+     - We cannot use it without initialization.
+     - We cannot have more than one local variable with the same name within the same block.
+     
+     
+               
           
        
        
