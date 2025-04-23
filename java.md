@@ -11,13 +11,13 @@ platform architecture etc.
 
 ## Programming language
 - programming language is used to interact with the machine,
-- A language whiuch is used to write the program is called a programming language
+- A language which is used to write the program is called a programming language
 - Based on human understanding it is classified in three types:
 1. High level language : A language which is completely understandable by human but not by machine is called 
   high level language  - java , c++ , c , python.
-2. Mid?Intermediate level : A language which nethier completely understandable by human nor by machine 
+2. Mid?Intermediate level : A language which neither completely understandable by human nor by machine 
   is called as mid level language - Bytecode
-3. Low level/Binary/Machine level language : A language which is not understyandable by human 
+3. Low level/Binary/Machine level language : A language which is not understandable by human 
    but completely understandable by machine 
   ex: 0's and 1's
 
@@ -27,7 +27,7 @@ It a software Which is used to convert high level language into low level langua
 
 ## Features of java
 1. It is simple as compare to c
-2. It is plateform Independent
+2. It is platform Independent
 3. It is secure
 4. It has high performance
 5. It is an efficient language
@@ -37,7 +37,7 @@ It a software Which is used to convert high level language into low level langua
 9. It is Robust (Widely Used)
 10.   It has a large community support
 11. It is strictly typed language 
-12. It is case-sensative
+12. It is case-sensitive
 13. It is architectural neutral language
 14. It is secure
 15. Highly performance
