@@ -194,7 +194,7 @@ address of a memory variable.
 
 ## Display Statement
 
- 1. The statement which is used to print a message on the console . In Java we have two types of display statement.
+ 1. The statement which is used to print a message on the console . In java we have two types of display statement.
      i. System.out.println();
      ii.System.out.print();
      iii. System.out.printf();
@@ -289,6 +289,50 @@ address of a memory variable.
        the block where it is declared.
      - We cannot use it without initialization.
      - We cannot have more than one local variable with the same name within the same block.
+   
+   # operators 
+   - It is a predefined symbol which is used to perform specific task.
+   - Operand : Operand is the data on which operator works.
+   - ex 10 + 20 operand - 10 and 20 + is operator
+   - combination of operator and operand ex: 10 + 20 , 1*2 + 5  6;
+   - characteristics of operator
+   - Every operator after performing a task will return a data or value.
+   - Every operator has some precedence or priority.
+   - every operator follows rules of associativity. it means direction of execution . It means when two or more operator having
+     the same precedence either from left to right or right to left.
+   - Associativity has always not the same 
+   - Note : In an expression of we have multiple operator then first it is evaluated based on the precedence of operator
+     but two or more operator having same precedence then we have to solve according to associativity.
+   - Types of operator
+   - Based on operand
+     - Unary
+     - Binary
+     - Ternary
+   - Based on task
+     - Arithmetic
+     - increment/Decrement
+     - Relational
+     - Assignment
+       - compound assignment
+     - Logical operator
+     - conditional operator
+     - Bitwise operator
+   
+   - Based on the operand operator is classified into three types.
+     unary : an operator which takes only one operand to perform a task is called unary operator
+     ex: increment , decrement and logical not operator.
+   - Binary operator : An operator which takes only two operand to perform a task is called unary operator.
+     ex : Arithmetic relational operator , Assignment and relational.
+   - Ternary : An operator which takes exactly operand to perform a task is called ternary operator.
+      ex : conditional operator .
+   - Based on the task:
+     - Arithmetic operator : it is a binary operator which is used to perform an arithmetic operation
+       ex : Addition(+) , subtraction(-) , multiplication(*) , division(/) , modulus(%)
+       - it is used to add two numeric value - Integer and decimal - In addition operator in any one of operand 
+       - of string type then instead of addition it will perform concatenation.
+     
+   - Modulus operator : it is used to divide a number and return a number.
+
      
      
                
