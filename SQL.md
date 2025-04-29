@@ -140,5 +140,51 @@
   3. Selection - The process of fetching the data from the table by selecting both rows and columns
   4. joins - The process of fetching the data from multiple table simultaneously is known as joins.
   5. select - select is a keyword which is used to display the data which has selected by projection selection and joins.
-  6. 
-           
+
+# projection 
+- The process of fetching data from table by selecting only with columns.
+- syntax : 
+
+         keywords                      input
+         
+         select             * /[Distinct] column-name /
+         from                    Expression{Alias}
+         keyword is known as      Table name:
+         clauses
+
+- Write a query to display that are present in table Employee.
+- Write a query to display that are present in table Employee who are working on dept = 20;
+- WAQTD the salaries of all the employees from employee table.
+- WAQTD Employee name and the job 0f all employee.
+- WAQTD emp_name salary , dept no , and the job of all employee table.
+- WAQTD all the details from emp.
+- WAQTD The jobs from the employee table , but there should not be any repeated record.
+- WAQTD the job and dept-no and the salary of all the employee but there should not be any repeated one.
+- The statement which consists of operand and operator
+
+
+  # Expression : 
+   - Any statement which gives the result is known as expression.
+   - statement is a collection/combination of operand or operator.
+   - Examples : 2 + 5 = 7;  M * A = F ; H2 + SO4 = H2SO4; 
+   - Sql Expression
+   - Salary + commission =  Result.
+   - Note : In order the sql expression instead of using the values as a operand , we need to use
+     column as a operand.
+   - Example : salary * 12 
+
+
+
+
+
+
+## special operator in sql
+   - These Operators are used to perform the special type of task in sql.
+   - There are 4 set of special operators
+   - IN and NOT IN
+   - BETWEEN , NOT BETWEEN
+   - IS , IS NOT
+   - LIKE ,  NOT LIKE
+   - these all the operators are not mandatory we can also solve the queries by using n no. of different
+     ways.
+   - 

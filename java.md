@@ -140,7 +140,7 @@ address of a memory variable.
       - Rules of identifiers
         1. Cannot be started with number.
         2. Only '$' and '_' are used as a special character apart from these no special character can be used in an identifier.
-        3. Spaces is not allowed in an identifier.
+        3. Spaces is not allowed in an identifier .
         4. Keyword cannot be used as an identifier.
    
       - Conventions
@@ -333,8 +333,45 @@ address of a memory variable.
      
    - Modulus operator : it is used to divide a number and return a number.
 
-     
-     
+## increment decrement operator : 
+ - it is a unary operator 
+ - it is used to increase and decrease a value by one.
+ - based on the position it is classified into two types.
+ - Increament --> preIncrement , PostIncrement
+ - Decrement ---> postDecrement , preDecrement;
+ - PostIncrement
+   - it is a unary operator which is used to increase a value by one
+   - it is written after the variable --> int n = 2; n++;
+   - it will first used the existing value of the variable after that it increases the value.
+ -PreIncrement
+   - it is also a unary operator
+   - which is used to increase a value by one but in preIncrement increment symbol is used before tha variable.
+   - int i = 10; ---> sopln(++i);
+   - it will first increase the value of a variable by one then used the updated value..
+   - Note : Increment and decrement operator cannot be used on a constant value , it can be applied on a variable
+   
+## Assignment operator
+   - it is binary operator , it is used to assign the value to the variable.Associativity : right to left.
+   - LHS mus be a variable.
+   - it has the least precedence.
+   - Note : if an expression contains multiple operators then it will be solved based on the operators precedence, but if 
+     two or more operator having same precedence then associativity of the operator will be followed.
+
+## Compound Assignment operator 
+   Combination of arithmetic operator and assignment operator.
+   n+=2 ; n = n+2
+
+## logical operator
+   - logical AND (&&)
+   - logical OR(||)
+     - It is binary operator
+     - It is used to merge more than one condition AND if any of the condition returns true it will also return true.
+     - In logical or operator if the first condition returns true it will directly return true.It will not even check 
+       the second condition.
+   - logical NOT(!)
+   - It can be used only on the condition of boolean data, In java we have above logical operator
+   - write a condition to check whether a given day is comes under weekend or not
+
                
           
        
