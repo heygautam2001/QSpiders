@@ -187,4 +187,58 @@
    - LIKE ,  NOT LIKE
    - these all the operators are not mandatory we can also solve the queries by using n no. of different
      ways.
-   - 
+   - IN VS NOT IN
+     - These are special  which  operator which are help us to pass the multiple value at the RHS side to make the comparisons.
+     - NOT || != || <> 
+     - write a query to display all the details of the employees the employee were working in department no. 10 and 20.
+     - select* from emp where deptNo = 10 0R dept = 20;
+     - select * from emp where deptNo IN (10 , 20);
+     - q . write a query to display all the details of employees , the employess whose salary are 1500 , 1600 , 3000 , and 5000;
+     - select * from emp where sal IN(1600 , 1500 , 3000 , 5000);
+     - ques : write a query to display all the details of the employee whose names are smith and kang.
+     - select * from emp where ename = "SMITH" OR ename = "KANG";
+     - select * from emp where ename IN ('SMITH' , 'KANE');
+     - ques: all the details of the employees except all the employees working in deptno 10 and 30.
+     - select * from emp where deptno NOT IN (10 , 30);
+   
+   - BETWEEN VS NOT BETWEEN
+     - These are the special operators which are help us to solve the range value queries.
+     - syntax : 
+     - WHERE COL_NAME /EXP BETWEEN / NOT BETWEEN LOWER_VALUE AND HIGHER_VALUE;
+     - QUES : write a query to display all the details of the employees , the employee whose salary are between 1600 to 3000.
+     - select * from emp where salary > 1600 AND salary < 3000;
+     - select * from emp where salary between 1601 and 2999 ;
+     - Ques : Display all the details of employees whose salary are in the range of 1600 and 3000;
+     - select * from emp where salary between 1600 and 3000;
+     - ques : Display all the details from , the employee who hired 1980 to 1987.
+     - ques: Display all the details of the employees who hired in the range of 1980 and 1987.
+     - Display all the details of employee , the employee who hired during the year of 1981.
+     - Display all the details except all the employees , the employees whose salaries are in  between 1600 to 3000.
+     - Display all the details if the employees except all the employees , the employees whose salary are in the range of 
+       1600 to 3000;
+   - IS Vs IS NOT
+     - These are the special operator which are used to compare null values. 
+     - Ques : write a query to display all the details of employees the employees who are earning the commission
+     - Ques : Display all the details of the employees , the employees who are not earning the commission.
+   
+   - LIKE VS NOT LIKE 
+     - It is used to perform the pattern matching operations.
+     - Syntax:
+     - WHERE COL_NAME/EXP LIKE/NOT LIKE 'PATTERN'
+     - To create a pattern the two special characters we have to use '%' , "_";
+     - % : the percentage will allow any type of characters , n number of characters.
+     - _ : the underscore will allow any type of characters but only one digit of characters.
+     - Ques : Display all tye details of the employees , the employees whose names end with r characters.
+     - select * from emp where ename like '%R';
+     - Ques : Diaplay all the details of the employees , the employee whose name having 'a' character
+     - select * from emp where ename like '%A%';
+     - Ques : Display all the details of employee , the employees who hired in the dec.
+     - SELECT * FROM EMP WHERE HIREDATE LIKE '%DEC%';
+     - Display all the details of employee , the employees whose name having last second character in the E.
+     - SELECT * FROM EMP WHERE ENAME LIKE '%E_';
+     - Display all the details of employees . the employees whose name starts with a character and starts with p character.
+     - Display all the details of employees , except all the employees whose name not starts with A and B;
+     - SELECT * FROM EMP WHERE ENAME NOT LIKE 'A%' AND ENAME NOT LIKE 'B%';
+     - Display all the details of employees whose name starts with vowels;
+     - SELECT * FROM EMPLOYEES WHERE ENAME LIKE 'A%' AND ENAME NOT LIKE '%E_'
+     - Display all the details of employees whose name not starts with vowels.
