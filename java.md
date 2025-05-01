@@ -372,7 +372,32 @@ address of a memory variable.
    - It can be used only on the condition of boolean data, In java we have above logical operator
    - write a condition to check whether a given day is comes under weekend or not
 
-               
+- write A condition to check whether given month is february or not based on no of days
+- int noOfDays = 28;
+- if(noOfDays == 28 || noOfDays == 29)
+- sout(True)
+- Write a program to check whether a number is multiple of 5 or 6       
+- logical or operator is used whenever we have multiple conditions & we have to satisfy anyone of them.
+- conditions should return true.
+- if all the conditions returns false then only logical ir operator returns false.
+
+
+## logical AND OPERATOR (&&)
+   - It is a binary operator 
+   - It is used when we have to satisfy all the conditions
+   - If any one of the condition return it directly return false , it will not check the further conditions.
+   - Ques : Write a condition to check whether a given number is positive even number or not. 
+   - It returns true when all the conditions is satisfied (true)
+   - Write a conditions to check whether a given character is lowercase alphabet or not.
+   - Write a program whether a given number is align within 100 or multiple of 5.
+   - Write a java program to check whether a year is leap year or not.
+
+## Logical Not
+   - It is unary operator
+   - It is used to negate a condition or reverse a given condition . its return type is always be boolean.
+   - It can be used only on the condition or boolean literals.
+   - ex: sout(!true)----> false.
+         sout(!false)----> true.
           
        
        
