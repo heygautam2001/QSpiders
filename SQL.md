@@ -242,3 +242,85 @@
      - Display all the details of employees whose name starts with vowels;
      - SELECT * FROM EMPLOYEES WHERE ENAME LIKE 'A%' AND ENAME NOT LIKE '%E_'
      - Display all the details of employees whose name not starts with vowels.
+     - Display all the details of employees , 
+
+     select emp.* sal*12 "Annual Salary" , sal*6 "Halfturn salary" from emp where dept IN(10 , 20);
+
+  ##  Functions
+      - The set of instructions which are help is to perform the specific task is known as
+        functions.
+      - In general there are two types of functions--> 1.userdefined 2.InBuilt
+
+
+      - user-defined : A functions that are defined by users according to their requirements are known as 
+        user defined functions.
+      - we can do modifications in user defined function.
+      - only the person who create the functions can used it. 
+        static
+      - security will be more.
+      
+
+
+
+      - InBuilt : the functions which are peredefined in the software are known as bnuiltIn functions , inbuilt functions and pre-defined
+        functions.
+      - we cannot do modifications in user defined function.
+      - Everyone can use builtIn functions . 
+      - Dynamic 
+      - security will be less.
+      - Inbuilt Functions ---> 1.Single row function , 2.Multi row function.
+
+
+     single row functiuons
+      The functons in which yhe number of inputs are equal to no of outputs are knoe as single row functions.
+      The single row functions executes line  by line or row by row.
+       1) length()
+       2) upper()
+       3.) substrings() ......ETC
+     Multi row functions.
+       The functions which gives only one output , on multiple input..
+       It executes group by group.
+       After the aggregation the execution takes place , hence these function also known as aggregate functions. 
+       AVG()
+       MAX()
+       MIN()
+       SUM()
+       COUNT()
+   ## Rules of multi row functions.
+      1)syntax:
+             MRF_NAME(COL_NAME/EXPRESSION)
+             MAX(SAL/SAL*12) , MIN(SAL/SAL*12) , .....
+      2. ALLL THE MRF WILL ALLOWS ONLY COLUMN/EXP AS ARGUMENT
+         --- WAQTD THE MAXIMUM SALARY FROM THE EMPLOYEE
+          SELECT ,MAX(SAL) FROM EMP;
+          --- WAQTD THE MAXIMUM SALARY AND MAXIMUM COMM FROM THE EMPLOYEE ?
+          SELECT MAX(SAL , COMM) FROM EMP; ---> INVALID
+          SELECT MAX(SAL) , MAX(COMM) FROM EMP ;
+
+      3. IN SELECT CLAUSE WE CAN USE N NUMBERS OF MRF
+         SELECT MAX(SAL) , MIN(SAL) , ANG(SAL) , SUM(SAL) , COUNT(SAL) , MAX(HIREDATE) , MIN(COMM)
+         FROM EMP;
+
+      4. IN WHERE CLAUSE : IT IS NOT POSSIBLE TO USE ANY MULTIROW FUNCTION.
+         SELECT * FROM EMP WHERE SAL = MAX(SAL);
+
+
+
+
+     5. IN SELECT CLAUSE ALONG WITH MULTIROW FUNCTION IT IS DIFFICULT TO UASE THE COLUMNS / EXPRESSION
+        WE CAN USE IF WE ARE USING THE GROUP BY CLAUSE
+
+     6. MULTIROW FUNCTION WILL IGNORES  NULL VALUE.
+
+    7. AMONG ALL THE MULTIROW FUNCTIONS ONLY THE COUNT FUNCTION WILL ALLOW THE '*' AS A ARGUMENT.
+
+      QUES: WRITE A QUERY TO DISPLAY THE TOTAL SALARY AND THE NUMBER OF EMPLOYEES WHO ARE 
+      WORKING AS A MANAGER.
+     
+      QUES: WRITE A QUERY TO DISPLAY THE NUMBER OF EMPLOYEES WORKING IN DEPTNO 10 AND 30.
+       
+      QUES : DISPLAY THE NUMBER OF EMPLOYEE WHO ARE WORKING IN EACH DEPARTMENT FOR THE DEPARTMENTNO 10 AND 30
+     
+              
+      
+      
