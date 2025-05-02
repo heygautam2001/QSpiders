@@ -398,7 +398,63 @@ address of a memory variable.
    - It can be used only on the condition or boolean literals.
    - ex: sout(!true)----> false.
          sout(!false)----> true.
-          
+## Ternary Operator || conditional operator
+   - it is a ternary operator .
+   - it is used to take a decision.
+   - it acts as a decision making statement.
+   - syntax : operand1 ? operand2 : operand3.
+   - operand1---> true ---> operand2 is ans.
+   - operand1---> false ---> operand3 is ans.
+   - operand1 should be a condition
+
+   
+
+```html
+
+![img.png](img.png)
+![Screenshot 2025-04-23 at 9.45.48 AM.png](../../Screenshot%202025-04-23%20at%209.45.48%20AM.png)
+
+
+
+```
+# working of ternary operator 
+ - In operand1 we have to write a condition which evaluates to true and false.
+ - In place of operand2 and operand3 , you can write any data , number , string, values.
+ - The return type of conditionals / ternary operator depends upon the data type of operand2 and operand3.
+ - Ques : write a java to find smallest of two number;
+
+        int a = 23;
+        int b = 12;
+        a >= b ? System.out.println("a is greater") : System.out.println("b is greater");
+ -  write a java program to check whether a given number is even or odd.
+        
+        int a = 5;
+        a%2 == 0 ? System.out.println("even number") : System.out.println("odd number");
+ - write a java program to check whether a given character is number or not.
        
-       
-      
+       char ch = '10';
+- when you want to take last digit of any number then we have to take its modulus by 10.
+
+# TYPE CASTING
+  - The process of cionverting one type of data into another type of  data is known as typecasting.
+  - We have two types ---> primitive typecasting ----> Non-primitive.
+      primitive ---> 1. widening 2. narrowing 
+  - Nion primitive ----> 1.upcasting 2. down-casting 
+  - Primitive typecasting
+     - The process of converting one type of primitive data into another type primitive data is known as 
+       primitive typecasting.
+     - Widening : The process of converting smaller type of data into larger type of data is known as widening.
+       - Ex : byte b = 10; int a = b;
+       - float f = 3.6f;
+         double d = f;
+       - char ch = 'y';
+         long l = ch;
+       - it is done by the compiler implicitly because here there no chance of data loss.
+       - byte < short < int < long < float < double -----> widening.
+       - ASCII
+       - It stands for 'american standard code for information interchange'. It means for every character 
+          unique positive number is associative or linked with the character.
+       - It will be up to 256 character.
+     - Narrowing :
+       - The process of converting larger type of data into smaller type of data .
+       - In case of narrowing there is a chance of data loss , so we have to do typecasting externally.
