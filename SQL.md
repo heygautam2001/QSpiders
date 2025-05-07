@@ -414,3 +414,59 @@
             SELECT COUNT(*) , DEPTNO FROM EMP GROUP BY DEPTNO HAVING COUNT(*) > 4 AND COUNT(*) < 6;
     - NOTE : WE CAN CREATE A GROUP FOR ANY TYPE OF COILUMN BUT MOST OF THE CASES IF WE CREATES THE GROUP THE COLUMN WHICH CONSISTS OF REPEATED
             DATA THOSE GROUP WILL BE USEFUL
+
+
+
+
+
+
+
+# Joins 
+   - The process of fetching the data from multiple tables simultaneously is known as joins.
+   - In sql there are five type of joins.
+     1. cartesian joins (CROSS JOINS)
+     2. Inner join
+     3. natural join
+     4. self join
+     5. outer join ----> 1. Right outer join , Left outer join , Full outer join
+   # cartesian joins..
+   - it is the process of fetching the data from multiple table by merging all the records of one table to each and every
+     record of remaining table.
+   - syntax
+
+          SELECT COL_NAME/ EXP /*
+           FROM TABLE_NAME1 , TABLENAME2 , ... TABLE_NAMEn
+           [WHERE FILTER THE CONDITION]..
+   - QUES: DISPLAY ALL THE EMPLOYEES DETAILS AND THERE DEPARTMENT DETAILS.
+     - SELECT * FROM EMP , DEPT ;
+   - cartesian join will help us to get the data from multiple tables. but it will also fetch error 
+     records from multiple tables.
+   - It is consider as a drawback of the cartesian joins to overcome this drawback we have use either inner/natural join.
+   - Ques : write a query to display the Ename , sal , dept name of smith.
+   - select ENAME , SAL , D_NAME FROM EMP , DEPT WHERE ENAME = 'SMITH';
+
+
+   # INNER JOINS
+   - IT IS USE TO GET THE MATCHING RECORDS FROM THE MULTIPLE TABLES.
+   - SYNTAX:
+          
+           SELECT COL_NAME / EXP / *    
+           FROM TABLE_NAME1 , TABLE_NAME2, ... TABLENAMEn
+            WHERE  INNER_JOIN_CONDITIONS[AND FILTER CONDITIONS]
+
+   - WRITE A QUERY TO DISPLAY ALL THE EMPLOYEE DETAILS AND THEIR DEPARTMENT DETAILS.
+       
+         SELECT * FROM EMP , DEPT WHERE EMP.DNO IN DEPT.DNO;
+
+   - WRITE A QUERY TO DISPLAY THE SAL , LOCATION AND THE DEPTNAME OF ALL THE EMPLOYEE WHOSE NAME STARTS WITH S.
+
+         SELECT * FROM EMP , DEPT WHERE EMP.DNO IN DEPT.DNO AND ENAME LIKE 'S%';
+   - WRITE A QUERY TO DISPLAY THE ENAME ,SAL , LOCATION AND  OF ALL THE EMPLOYEE WHO ARE WOPRKING IN SALES DEPARTMENT.
+
+         SELECT * FROM EMP , DEPT WHERE EMP.DEPTNO IN DEPT.DEPTNO AND DNAME = 'SALES';
+   - WRITE A QUERY TO DISPLAY THE SAL , LOCATION AND THE DEPTNAME OF ALL THE EMPLOYEE WHOSE NAME ENDS WITH R.
+
+          SELECT * FROM EMP , DEPT WHERE EMP.DNO IN DEPT.DNO AND ENAME LIKE '%R'; XXXX
+           SELECT * FROM EMP ,EMP.DEPTNO WHERE EMP.DNO IN DEPT.DNO AND ENAME LIKE '%R';
+
+   - IN INNER JOIN ACCESSING THE FOREIGN KEY COLUMN WILL BECOME THE DIFFICULT UNTIL WE ARE NOT ACCESSING WITH TABLE NAME.

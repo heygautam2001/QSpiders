@@ -458,3 +458,38 @@ address of a memory variable.
      - Narrowing :
        - The process of converting larger type of data into smaller type of data .
        - In case of narrowing there is a chance of data loss , so we have to do typecasting externally.
+     
+     - Recycling process : The process converting the in the range of datatype:
+
+# #if
+  - It is a keyword
+  - syntax
+  -          if(conditions){
+                //java statement///
+             }
+  - if condition is true then the block of code executed.
+  - if condition is false then the block of  is skipped
+  - simple if is used to take the decision when we want to execute or skip a set of instruction based on the conditions.
+  - working process.
+    - In the 'if' first controller will check the condition if the condition is returns true then it will go 
+      inside the block and execute all the set of instruction.
+    - Ques : write a program to check whether a given number is multiple of five or not if it is multiple then 
+      print its square.
+    - Ques : Write a program to print the number if it contains fraction value otherwise skip it.
+    - Ques : Write a program to check whether a number 0 or not at the unit place ;
+## if else:
+   - Both if and else are keyword
+   - syntax :
+
+                if(conditions){
+                    //Code java
+                 }
+                else{
+                  //java code
+                  }
+   - if we have to take tye decision whether one set statement will be executed or another set 
+     of statement will be executed then we use if else statement.
+   - # #working process
+       1. First control will the check the if condition , if it returns true then if block will get executed but if it 
+           returns false then else block will get executed.
+       2. In if else any one block  will get executed , both the block are never get executed once.
