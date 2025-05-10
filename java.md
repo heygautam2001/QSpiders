@@ -482,10 +482,13 @@ address of a memory variable.
    - syntax :
 
                 if(conditions){
+
                     //Code java
                  }
                 else{
+
                   //java code
+
                   }
    - if we have to take tye decision whether one set statement will be executed or another set 
      of statement will be executed then we use if else statement.
@@ -493,3 +496,67 @@ address of a memory variable.
        1. First control will the check the if condition , if it returns true then if block will get executed but if it 
            returns false then else block will get executed.
        2. In if else any one block  will get executed , both the block are never get executed once.
+       3. write a java program to check whether a character is alphabet or not.
+       4.  write to java program check whether a number is even or odd .
+       5. write a java program to check whether a given number multiple of 8 or not if it is multiple then check 
+        it is also multiple of 3 and 6 both or not.
+   # else if ladder.
+   - it is used whenever we have more than two options and we have to select only one options.
+   - syntax : 
+        
+          if(condition){
+               java code      
+          }
+          else if(conditions){
+                java code       
+   
+           }
+          else if(conditions){
+                java code
+
+           }
+    
+          else if(conditions){
+                 java code
+
+           }
+         .
+         .
+         .
+         else{
+          
+           java code..
+
+         }
+   - In else if ladder first control will check the if condition , if the condition is satisfied then it will go 
+     inside the if block and executes all the statement , but if it returns false then it will check the next else if
+     condition , if any else if condition returns true then that corresponding block will get executed & it will
+     not check any else if condition further , but if all the else if condition returns false then it will execute else block.
+   -  In else if ladder else block is not mandatory , it is optional.
+   - Ques : Write a program to determine student grades based on the obtained marks.
+   - Ques : write a java program to check whether a given character is , number , alphabet or special character.
+   - Ques: Write a java program to find smallest of three number;
+
+# switch conditional keyword
+ - it is a keyword
+ - syntax:
+   
+       switch(value/exp)
+       {
+         case val/exp : //java ststement
+         case val/exp: //java statement
+         case val/exp: //java statement
+         .
+         .
+         .
+         .
+         default : //java statement
+        }
+ - inside switch we can pass byte , short , int , char and string typeof value, but we cannot pass float , double , long
+   and boolean type of value
+ - int the case we have to pass constant value , it means we cannot pass a variable also.
+ - # working process of switch:
+ - switch uses predefined equality operator which compares value of switch with the value of case, if any case value
+   is getting matched with the switch value then that particular case block along with all the remaining below
+    case block will also gets executed without checking the case value.
+ - if no case value is matching with the switch value then default block will get executed.
