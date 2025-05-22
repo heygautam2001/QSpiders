@@ -439,7 +439,7 @@ address of a memory variable.
   - The process of cionverting one type of data into another type of  data is known as typecasting.
   - We have two types ---> primitive typecasting ----> Non-primitive.
       primitive ---> 1. widening 2. narrowing 
-  - Nion primitive ----> 1.upcasting 2. down-casting 
+  -   Non primitive ----> 1.upcasting 2. down-casting 
   - Primitive typecasting
      - The process of converting one type of primitive data into another type primitive data is known as 
        primitive typecasting.
@@ -560,3 +560,49 @@ address of a memory variable.
    is getting matched with the switch value then that particular case block along with all the remaining below
     case block will also gets executed without checking the case value.
  - if no case value is matching with the switch value then default block will get executed.
+
+
+
+# 22-05-2025 Methods In Java
+- It is a block of code or set instructions which is used to perform a specific task.
+- if we want to perform a specific task  in our requirement then instead of writing a the related code in every
+  requirement , we will write irt ones and reuse it every requirement.
+- advantages of methods
+  - It enhances code reusability.
+  - It also increases code reusability.
+- characteristics of methods.
+  - Method will get executed whenever it is called.
+  - we can have n number of method inside a class.
+  - we can use/call the methods n numbers of time.
+  - Method are executed in stack area , called stack frame.
+- Syntax to create a methods.
+    
+      [Modifiers] return-type methodName([formal argument])
+       {
+           
+          //code.
+      
+        }
+        public static void main(String []args){
+        }
+- Method terminology
+  1. method signature -> method name + formal Argument is termed as method signature.
+  2. main(String[] args)
+  3. Method Declaration -> Modifier , return type along with method signature
+  4. public static void main(String []args)
+  5. Methods definition
+  6. Method declaration + Method body
+  7. public static void main(String []args)
+     {
+
+     }
+- Modifiers...
+  - It is used to change or modified the behaviour of component of java.
+  - In Java we have two types of modifiers
+    1. Access Modifiers ---> public , private , protected , default...
+    2. Non-Access Modifiers ,---> static , volatile , abstract , final , native , synchronized. 
+- Return type - when a method is called it will perform a task and return a data to thr caller.
+  return type specifies which type of data is given back to the caller.
+  1. void -> does not return anything.
+  2. primitive type
+  3. non-primitive.

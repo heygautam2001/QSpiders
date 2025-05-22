@@ -93,7 +93,7 @@
       2. DD - MM - YY   ----> 18-Apr-25
       3. DATE are used to store dates in the above formats
    - Large Object : it is used to store the huge amount of info.
-   - syntax LOB(Size) ----> capacity --> 4GB ---> 1GB ---> 64000 character
+   - syntax LOB(Size) ----> Max-capacity --> 4GB ---> 1GB ---> 64000 character
       1. CLOB - Character Large Object : it is similar to varchar data type syntax ---> CLOB(Size)
       2. BLOB - Binary Large Object : it is used to store the meta-data upto 4GB syntax -- BLOB(Size); 
    - NUMBER
@@ -101,15 +101,20 @@
       - syntax : NUMBER(Precision , [Scale]-->Optional)
         - precision -> it is used to determine the number of digits which are required
           to store any Integer value.The range for the precision is 1 to 38.There is no default
-          value for precision. It is used to determine the number of digits which are required to store any decimal value within the decimal.
+          value for precision. 
+        - Scale : It is used to determine the number of digits which are required to store any decimal value within the decimal.
         - The range of the scale is (-84 to 127)
         - The default value of scale is 0.
+        - Number(5,-2)---> 99999.00
+        - Number(4,-3) ----> 9999.000
    - constraints 
         - constraints are the rule that area used to rules and restriction of each column
         - 1. UNIQUE
           2. NULL AND NOT NULL
           3. CHECK
-          4. PRIMARY KEY FOREIGN KEY
+          4. PRIMARY KEY
+          5. FOREIGN KEY
+          6. AutoIncrement and default .
       -  UNIQUE: It is used to avoid the repeated or duplicated value from the columns.
       - syntax: UNIQUE
       - NOT NUll : it is used to make the column is mandatory.
@@ -120,7 +125,7 @@
         2. It is the combination of unique and the not null.
         3. The primary key will not allow any repeated values and a duplicated values.
         4. In a same table we need to have only one primary key.
-     - FOREiGN KEY : IT IS USE TO ESTABLISH A CONN BETWEEN THE MULTIPLE TABLE
+     - FOREIGN KEY : IT IS USE TO ESTABLISH A CONN BETWEEN THE MULTIPLE TABLE.
         5. It is not a combination of unique and not null
         6. It will allow the empty cells and the repeated value
         7. In a same table we can have up-to 255 foreign key
