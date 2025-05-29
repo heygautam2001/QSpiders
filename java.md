@@ -569,7 +569,7 @@ address of a memory variable.
   requirement , we will write irt ones and reuse it every requirement.
 - advantages of methods
   - It enhances code reusability.
-  - It also increases code reusability.
+  - It also increases code readability.
 - characteristics of methods.
   - Method will get executed whenever it is called.
   - we can have n number of method inside a class.
@@ -606,3 +606,78 @@ address of a memory variable.
   1. void -> does not return anything.
   2. primitive type
   3. non-primitive.
+
+# Types of method
+ 
+                        ** types of methods
+
+    1. Based on argument                   2. Based on modifiers
+       1. no argument method                   1. static method
+       2. parameterised method                 2. Final method
+       3. var arg Method                       3. abstaract method
+                                               4. native method
+                                               5. synchronised method.
+1. Based on argument.
+   1. No - argument method : A method which does not take any formal argument is known 
+      as No argument method . A variable which is declared inside the method parenthesis 
+      is known as formal argument.
+     
+
+       public static void first(){
+
+       }
+
+   2. Calling a no argument methods : syntax --> first();
+   3. create a ametyhid to print first 10 natural number in rebverse order
+   4. write a java program to calculate square of a number.
+   5. write a program to print all the factors of a given number.
+
+# * what happens when a method is called.
+  - whenever we execute our java program JVM will first call the main method for the execution of 
+    this method a frame will br created in the stack area.When it encounters any method call statement
+    control will transfer from the caller to the called method and execution of the caller will be paused.
+  - Execution of call method will start from the begining.After completion of the execution control
+    will go back to the caller & execution of caller will be resumed.
+
+# * Drawbacks of no argument methods...
+- In no argument method does not accept any formal argument , so every time we have to go inside the method and change the value
+  it means we are not allowed to pass any data.
+- to overcome this method we use parametrized method.
+
+  1. Parameterised method : 
+  - A method which accept formal argument is known as parameterised method.
+  - actual argument : It is a data which we pass to call a method.
+  - rules to call a parameterised method
+    1. To call a parameterised method , no of formal argument and no of actual agguent mjust be sAME
+    2. type of formal argument and actual argument also should be same.
+    3. if type of formal argument and actual argument is not same , then compiler will try to do widening , but if it is not 
+       possible , then we will get CTE.
+    4. syntax : modifier return-type identifier(Datatype identifier1 , Datatype identifier2 , ...... datatype identifier_n){
+       }
+    5. create a method to claculate a factorial of a given number...
+    6. write a java program to print sum of three number...
+    7. create a method which accepts character and print ascii value od the character...
+    8. write a java program to check whether a given number is palindrome or not..
+    9. write a program to print sum and product of range of two number...
+
+# A method which returns data...
+- In  java we can create a method which returns a data to the caller.
+- A method which returns a data its returns type should be other than void.
+- A Method can return primitive and non-primitive type of data...
+-       syntax: [modifier] return type methodName([formal arguments]){
+-        return value/exp;
+-        }
+- it  is a keyword.
+- it is a control transfer statement which stops the execution of current method and transfer the control to the caller.
+- it should be return at the last otherwise we get CTE.
+- return  is used to transfer a data or value after the operation to the caller.
+- with the help of return keyword we can return s single value...
+- we can have only one return statement inside the method body...
+- if return type of  method is void then writing return statement is optional , but if return type of  method is other than void 
+  then writing return statement is compulsory otherwise it will give CTE.
+- write a java program to return a sum of two integer number with the help of parametrised method.
+- write a java program to calculate sum of square of two number..
+- create a methid whioch takes an alphabet and ruturn the its correspondinf uppercase and lowercase character in such a way that 
+- if it takes upppercase it return lowercase and if lowercase then uppercase.
+- write a java program to check whether a number is perfect cube or not.
+   
