@@ -654,7 +654,7 @@ address of a memory variable.
        possible , then we will get CTE.
     4. syntax : modifier return-type identifier(Datatype identifier1 , Datatype identifier2 , ...... datatype identifier_n){
        }
-    5. create a method to claculate a factorial of a given number...
+    5. create a method to calculate a factorial of a given number...
     6. write a java program to print sum of three number...
     7. create a method which accepts character and print ascii value od the character...
     8. write a java program to check whether a given number is palindrome or not..
@@ -680,4 +680,11 @@ address of a memory variable.
 - create a methid whioch takes an alphabet and ruturn the its correspondinf uppercase and lowercase character in such a way that 
 - if it takes upppercase it return lowercase and if lowercase then uppercase.
 - write a java program to check whether a number is perfect cube or not.
+- write a program to find the sum of digit of each number..
+- write a program to check whether the given number is armstrong or not...
+- A number which is equal to sum of each digit raise to the the power equal to count of digit...
+- Write a java program to return sum of factorial of each digit in a given number..
+- write a java program to check whether a given number is harshad number or not. A number which is divisible sum of its digit..
+- LCM of two number && HCF of two number. lcm * hcf = ProductOfTwoNumber.
+- 
    
