@@ -201,8 +201,56 @@ MODIFY ---> RELATED TO TABLE...
    - Example : salary * 12 
 
 
+ # SELECTION : IT IS USED TO FETCH THE DATA FROM THE TABLE BY SELECTING BOTH COLUMNS AND ROWS (ROWS AND ATTRIBUTE)
+ - SYNTAX : SELECT * / [DISTINCT] COL_NAME/ EXPRESSION [ALIAS] FROM TABLE_NAME 
+   WHERE FILTER_CONDITIONS;
+ - WHERE : IT IS USED TO FILTER THE RECORDS BASED ON THE CONDITIONS.
+ - THE WHERE CLAUSE WILL EXECUTE ROW BY ROW
+ - THE WHERE CLAUSE WILL CHECK THE CONDITIONS IF THE CONDITION IS TRUE IT WILL SELECT THE RECORD AND IF THE CONDITION IS FALSE
+    IT WILL REJECT THE RECORD.
+ - THE OUTPUT OF THE WHERE CLAUSE IS IN THE FORM OF BOOLEAN VALUES
+ - IN WHERE CLAUSE WE CAN ALSO USE THE MULTIPLE CONDITIONS WITH THE HELP OF LOGICAL OPERATORS
+ - THE FORMAT OF CONDITION IS : COL_NAME / EXPRESSION OPERATOR VALUES.
+ - WRITE A QUERY TO DISPLAY ALL THE EMPLOYEES NAME , THE EMPLOYEES WHO ARE WORKING IN DEPT_NO 20.-----> SELECTION
+ - WRITE A QUERY TO DISPLAY ALL THE EMPLOYEE NAME.----> PROJECTION
+ - WRITE A QUERY TO DISPLAY ALL THE DETAILS OF THE EMPLOYEES WHOSE SALARIES ARE MORE THAN 2000;
+ - SELECT * FROM EMP WHERE SAL > 2000;
+ - WRITE A QUERY TO DISPLAY ALL THE DETAILS OF THE EMPLOYEES WHERE JOB IS MANAGER.
+ - SELECT * FROM EMP WHERE JOB = 'MANAGER';
+ - NOTE : IN WHERE CLAUSE IF WE ARE USING ANY NUMERIC VALUE WE CAN USE DIRECTLY.
+ - NOTE : IN CASE WE ARE USING ANY STRING DATA OR DATA DATA THEN WE HAVE MENTION THE DATA AND STRING WITHIN
+ - SINGLE QUOTES AND THESE TO DATA ARE CASE SENSATIVE.
+ - IF WE ARE USING DATE DATA WE NEED TO FOLLOW THE DATE FORMAT OF ORACLE 'DD-MON-YY' OR 'DD-MON-YYYY'
+ - MYSQL WORKBENCH : 'YYYY-MM-DD' OR 'YY-MM-DD'
+ - WAQTD OF THE EMPLOYEES , THE EMPLOYEE WHOSE NAME IS SMITH;
+ - SELECT * FROM EMP WHERE ENAME = 'SMITH';
+ - WAQTD ALL THE DETAILS OF EMPLOYEES THE EMPLOYEES WHO HIRED ON 23-MAY-87
+ - SELECT * FROM EMP WHERE HIREDATE = '23-MAY-87';
+ - WAQTD ALL THE DETAILS OF EMPLOYEES THE EMPLOYEES WHO HIRED AFTER 1985.
+ - SELECT * FROM EMP WHERE HIREDATE >= '01-JAN-1986';
+ - SELECT * FROM EMP WHERE HIREDATE > '31-DEC-1985';
+ - WAQTD ALL THE DETAILS OF THE EMPLOYEE WHO ARE WORKING IN DEPTNO 10 AND 20;
+ - SELECT * FROM EMP WHERE DEPTNO = 10 OR DEPTNO = 20;
+ - WAQTD ALL THE DETAILS OF THE EMPLOYEES , THE EMPLOYEES WHOSE SALARY ARE 3000 AND 5000;
+ - SELECT * FROM EMP WHERE SAL = 3000 OR SAL = 5000;
+ - WAQTD ALL THE DETAILS OF THE EMPLOYEES , THE EMPLOYEES WHOSE SALARY MORE THAN 3000 AND LESS THAN 5000;
+ - SELECT * FROM EMP WHERE SAL > 3000 AND SAL < 5000;
+ - WAQTD ALL THE DETAILS OF THE EMPLOYEES , THE EMPLOYEES WHO ARE WORKING DEPTNO 10 AND 20 AS A MANAGER;
+ - WAQTD ALL THE DETAILS OF THE EMPLOYEES , THE EMPLOYEES WHOSE SALARY ARE 3000 , 5000 , 1600 , 1500 IN DEPTNO 20 
+ - WORKING AS MANAGER AND CLERK;
+ - SELECT * FROM EMP 
+   WHERE DEPTNO = 20 AND (SAL = 3000 0R SAL = 1500 AND SAL = 1600) AND (JOB = 'MANAGER' OR JOB='CLERK');
+ - DISAPLY ALL THE DETAILS OF EMPLOYEE INCLUDING THE ANNUAL SAL OF THE EMPLOYEE IF THEIR ANNUAL SAL IN MORE THAN 30000;
+ - SELECT EMP.*  , SAL*12  "ASALARY" FROM EMP WHERE SAL*12 > 30000;
+ - NOTE : THE ALIAS NAME WHICH WE ARE USING IN A SELECT CLAUSE IT IS NOT POSSIBLE TO ACCESS IN A WHERE CLAUSE.
+ - WAQTD ALL THE DETAILS OF THE EMPLOYEE INCLUDING ANNUAL SAL , HALF TERM SAL AND QUATERV SAL AND 10 PERCENT INC IN ACTAL SAL 
+ - 12 % DEC IN ANNUAL SAL 6% INC HALF TERM SAL  FOR ALL THE EMPLOYEES AXCEPT SALESMAN WHO ARE WORKING IN DEPT NO 1
+ - 10 AND 20 HIRED AFTER 1980 USE THE ALIAS NAME FOR ALL THE EXPRESSION.
 
 
+# LOGICAL OPERATOR
+- THERE ARE THREE LOGICAL OPERATOR IN SQL;
+- Logical AND , Logical OR , Logical NOT
 
 
 ## special operator in sql
@@ -212,8 +260,10 @@ MODIFY ---> RELATED TO TABLE...
    - BETWEEN , NOT BETWEEN
    - IS , IS NOT
    - LIKE ,  NOT LIKE
-   - these all the operators are not mandatory we can also solve the queries by using n no. of different
+   - Extra part : Regular expression
+   - Note : These all the operators are not mandatory we can also solve the queries by using n no. of different
      ways.
+
    - IN VS NOT IN
      - These are special  which  operator which are help us to pass the multiple value at the RHS side to make the comparisons.
      - NOT || != || <> 
@@ -227,29 +277,80 @@ MODIFY ---> RELATED TO TABLE...
      - select * from emp where ename IN ('SMITH' , 'KANE');
      - ques: all the details of the employees except all the employees working in deptno 10 and 30.
      - select * from emp where deptno NOT IN (10 , 30);
+     - THESE OPERATOR WILL WORK WITH ONE COLUMN DATA 
+     - EX : DEPTNO IN(10 , 20 , 30); VALID
+     - EX : DEPTNO IN(10, 'SALES',40) ; INVALID
+     - WRITE A QUERY TO DISPLAY ALL THE DETAILS OF EMPLOYEES , THE EMPLOYEES WHO WHO ARE WORKING SALESMAN , MANAGER , CLERK.
+     - SELECT * FROM EMP WHERE JOB = 'SALESMAN' OR JOB = 'CLERK' OR JOB = 'MANAGER';
+     - SELECT * FROM EMP WHERE JOB IN('SALESMAN' , 'CLERK' , 'MANAGER');
+     - DISPLAY ALL THE DETAILS OF EMPLOYEES WHOSE SALARY ARE 3000, 5000 , 5000;
+     - SELECT * FROM EMP WHERE SALARY IN(1500 , 1600 , 3000 , 5000);
+     - DISPLAY ALL THE DETAILS OF EMPLOYEES , EXPECT ALL THE EMPLOYEES WHOSE SALARY ARE 1500 1600 3000 5000;
+     - SELECT * FROM EMP WHERE SAL NOT IN(1500 , 1600 , 3000 , 5000);
+     - DISPLAY ALL THE DETAILS OF EMPLOYEES , THE EMPLOYEES WHO  ARE W0RKING IN DEPARTMENT NO 10 AND 20 EXCEPT MANAGER AND CLERK 
+        WHOSE SALARIES ARE LESS THAN 6000 ;
+     - SELECT * FROM EMP WHERE SAL < 6000 AND (DEPTNO != 10 OR DEPTNO != 20) AND (JOB != 'MANAGER' OR JOB = 'CLERK');
+     - SELECT * FROM EMP WHERE SAL < 6000 AND DEPTNO NOT IN (10 , 20) AND JOB NOT IN ('MANAGER' , ''CLERK');
    
    - BETWEEN VS NOT BETWEEN
      - These are the special operators which are help us to solve the range value queries.
      - syntax : 
      - WHERE COL_NAME /EXP BETWEEN / NOT BETWEEN LOWER_VALUE AND HIGHER_VALUE;
      - QUES : write a query to display all the details of the employees , the employee whose salary are between 1600 to 3000.
-     - select * from emp where salary > 1600 AND salary < 3000;
-     - select * from emp where salary between 1601 and 2999 ;
+     - select * from emp where salary > 1600 AND salary < 3000; XXX WRONG ASKING BETWEEN NOT RANGE
+     - select * from emp where salary between 1601 and 2999 ; ✅✅CORRECT
      - Ques : Display all the details of employees whose salary are in the range of 1600 and 3000;
      - select * from emp where salary between 1600 and 3000;
-     - ques : Display all the details from , the employee who hired 1980 to 1987.
+     - ques : Display all the details from , the employee who hired BETWEEN 1980 to 1987.
+     - SELECT * FROM EMP WHERE HIREDATE BETWEEN '01-JAN-1981' AND '31-DEC-1986';
      - ques: Display all the details of the employees who hired in the range of 1980 and 1987.
-     - Display all the details of employee , the employee who hired during the year of 1981.
-     - Display all the details except all the employees , the employees whose salaries are in  between 1600 to 3000.
-     - Display all the details if the employees except all the employees , the employees whose salary are in the range of 
+     - SELECT * FROM EMP WHERE HIREDATE BETWEEN '01-JAN-1980' AND '31-DEC-1987';
+     - Display all the details of employee , the employee who hired during the year of 1981 INTO DEPTNO 10 AND 20 EXCEPT MANAGER.
+     - SELECT * FROM EMP WHERE HIREDATE BETWEEN  '01-JAN-1981' AND '31-DEC-1981' AND DEPT IN(10 , 20) AND DOB NOT IN('MANAGER'); 
+     - Display all the details of employees , except  the employees whose salaries are in  between 1600 to 3000.
+     - SELECT * FROM EMP WHERE SAL NOT BETWEEN 1601 AND 2999;
+     - Display all the details Of the employees except all the employees , the  employees whose salary are in the range of 
        1600 to 3000;
+     - SELECT * FROM EMP WHERE SAL BETWEEN 1600 AND 3000;
+     
    - IS Vs IS NOT
      - These are the special operator which are used to compare null values. 
      - Ques : write a query to display all the details of employees the employees who are earning the commission
      - Ques : Display all the details of the employees , the employees who are not earning the commission.
-   
+     - the employees who are working in 10 and 20 and earning the salaries..
+     - Write a query to  display all the details of employee the employees who are working in department no 30 and not earning any salaries.
+     - The employee who are not having any reporting managers.
+     - SELECT * FROM EMP WHERE MGR IS NULL;
+     - 
+     # regular expression /REGEXP
+   - It is the advance version  of like operator which is used to perform the pattern matching Operation.
+   - 1. ^ ---- STARTS
+     2. $ ----- FROM ENDS
+     3. [ ] --- FOR CHARACTERS ALSO WE CAN USE MULTIPLE  CHARACTERS.
+     4. . ------FOR SINGLE CHARACTER.
+     5. .* ---- IF WE WANT TO CONSIDER MULTIPLE CHARACTERS.
+     6. -  ----- RANGE CHARACTER. 
+     
+
+      DISPLAY ALL THE DFETAILS OF THE EMPLOYEES WHOSE NAME STARTS WITH S CHARACTER..
+      SELECT * FROM EMP WHERE ENAME LIKE S%;
+      SELECT * FROM EMP WHERE REGEXP_LIKE(ENAME,'^S');
+    
+      DISPLAY STARTS WITH C AND ENDING WITH K;
+      SELECT * FROM EMP HWERE ENAME LIKE C%K;
+      SELECT * FROM EMP REGEXP_LIKE( ENAME , ^C .* K$);
+     
+      ALL DETAILS , THE EMLOYEES WHOISE NAME HAVING 3 CHARACTER AS A L ENDS WITH THE R.  
+      SELECT * FROM EMP WHERE  REGEXP_LIKE(ENAME , ^..L.*R$)
+
+     DISPLAY ALL THE DETAILS OF EMOPLOYEES THE EMPLOYEES WHOSE NAME DOES NOT STARTS WITH VOWELS.
+     SELECT * FROM EMP WHERE NOT REGEXP_LIKE(ENAME ,  '^[A,E,I,O,U]');
+     DIAPLAY ALL THE DETAILS OF THE EMPLOYEES WHOSE  STARTS WITH PERCENTILE.
+     SELECT * FROM EMP WHRE REGEXP_LIKE(ENAME , '^%');
+     
    - LIKE VS NOT LIKE 
      - It is used to perform the pattern matching operations.
+     - THESE ARE USED TO SOLVE THE PATTERN RELATED QUERY.
      - Syntax:
      - WHERE COL_NAME/EXP LIKE/NOT LIKE 'PATTERN'
      - To create a pattern the two special characters we have to use '%' , "_";
@@ -257,17 +358,20 @@ MODIFY ---> RELATED TO TABLE...
      - _ : the underscore will allow any type of characters but only one digit of characters.
      - Ques : Display all tye details of the employees , the employees whose names end with r characters.
      - select * from emp where ename like '%R';
-     - Ques : Diaplay all the details of the employees , the employee whose name having 'a' character
+     - Ques : Display all the details of the employees , the employee whose name having 'a' character
      - select * from emp where ename like '%A%';
      - Ques : Display all the details of employee , the employees who hired in the dec.
      - SELECT * FROM EMP WHERE HIREDATE LIKE '%DEC%';
+     - SELECT * FROM EMP WHERE HIREDATE LIKE '__-DEC-__';
      - Display all the details of employee , the employees whose name having last second character in the E.
      - SELECT * FROM EMP WHERE ENAME LIKE '%E_';
-     - Display all the details of employees . the employees whose name starts with a character and starts with p character.
+     - Display all the details of employees . the employees whose name starts with A character and starts with S character.
+     - SELECT * FROM EMP WHERE ENAME LIKE 'A%' OR ENAME LIKE 'S%';
      - Display all the details of employees , except all the employees whose name not starts with A and B;
      - SELECT * FROM EMP WHERE ENAME NOT LIKE 'A%' AND ENAME NOT LIKE 'B%';
      - Display all the details of employees whose name starts with vowels;
-     - SELECT * FROM EMPLOYEES WHERE ENAME LIKE 'A%' AND ENAME NOT LIKE '%E_'
+     - SELECT * FROM EMPLOYEES WHERE ENAME LIKE 'A%' OR ENAME  LIKE '%E' OR ENAME LIKE 'I%' OR ENAME LIKE 'O%' ENAME LIKE '%U';
+     - SELECT * FROM EMPLOYEES WHERE ENAME NOT  LIKE 'A%' AND ENAME NOT LIKE '%E' AND ENAME  NOT LIKE 'I%' AND ENAME NOT LIKE 'O%' AND ENAME LIKE '%U';
      - Display all the details of employees whose name not starts with vowels.
      - Display all the details of employees , 
 

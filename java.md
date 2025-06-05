@@ -677,14 +677,115 @@ address of a memory variable.
   then writing return statement is compulsory otherwise it will give CTE.
 - write a java program to return a sum of two integer number with the help of parametrised method.
 - write a java program to calculate sum of square of two number..
-- create a methid whioch takes an alphabet and ruturn the its correspondinf uppercase and lowercase character in such a way that 
-- if it takes upppercase it return lowercase and if lowercase then uppercase.
+- create a method which takes an alphabet and return the its corresponding uppercase and lowercase character in such a way that 
+- if it takes uppercase it return lowercase and if lowercase then uppercase.
 - write a java program to check whether a number is perfect cube or not.
 - write a program to find the sum of digit of each number..
 - write a program to check whether the given number is armstrong or not...
-- A number which is equal to sum of each digit raise to the the power equal to count of digit...
+- A number which is equal to sum of each digit raise to the  power equal to count of digit...
 - Write a java program to return sum of factorial of each digit in a given number..
 - write a java program to check whether a given number is harshad number or not. A number which is divisible sum of its digit..
 - LCM of two number && HCF of two number. lcm * hcf = ProductOfTwoNumber.
-- 
-   
+
+# var arg methods...
+- A method which can take variable number of argument is known as var args method.
+- It was introduced in jdk 5.
+- This ,method is capable of receiving multiple number of actual argument.
+- syntax:
+-                [modifiers] returntype method_name(Datatype... identify)
+                   {
+                     
+                   }
+                   public static void m1(int... a){
+ 
+                    }
+
+- if in a class we have two ,method with same name , and one method is variable argument method , if we call the method by
+  by passing ame type of actual data in this case highest priority given to the same type of method.
+# Rules of var-args method
+  - In var-args method variable type of method must be declared at the last.
+               
+              public static void m2(int x , int... k){}
+
+  - In var-arg method we can have only one variable argument type of parameter.
+     
+            public static void m2(int... x){}
+
+  - In var-arg method we can pass any number of data , it will store in the form of array. 
+
+- write a java program to return sum of factors of a integer number...execluding the given number
+
+# # OOPS (OBJECT ORIENTED PROGRAMING).
+1. Object Oriented Programing is a new style of programming in which we consider every real world entity in form of object.
+2. Object : It is a real world entity which has its own properties and behaviours , functionality.
+3. characteristic of an object..
+   - An object has a name.
+   - An object has a properties.
+   - An object has a behaviors.
+5. properties : It is defined in form of variable.
+6. behaviour : It is described in the form of methods.
+7. object oriented programing is used to develop real world scalable and dynamic applications.
+8. It is a programing paradigm in which every is represented in the form of object.
+9. It follows bottom-up approach. Object oriented programming provides a mechanism to create an object store the object and performs
+   an operations on the object.
+10. It also provides some principle.
+    - Encapsulation
+    - Inheritance
+    - polymorphism
+    - Abstraction
+    - These are the four pillars of OPPS
+11. Fundamental of OPPS is class and object...
+12. Ques : write down the difference between procedural oriented programming language and object-oriented programming language.
+13. object is used to represent real world entity into software world or in other words it is a software world representation   
+     of real world entity.
+14. Note : since all the properties and behaviour  of a particular object we require a dedicated block of memory to replicate 
+    real world entity init the real world but in java we don't have any primitive data type to store all these properties and 
+    behaviour together, so we have to go for user defined non primitve datatype. We can create our own user defined non primitive data type 
+    with the help of class.
+15. Class : it is keyword.
+    - it is compulsory for the execution of program.
+    - it is used to create used defined non-primitive data type.
+    - it is a blueprint of an object
+    - In java we also have some predefined classes;
+      - system , scanner , string , Stringbuilder etc.
+    - Non-primitive data types
+      - It is a user defined data type.
+      - it is used to store the references or address 
+      - In primitive data type we have fixed number of data type. fixed size
+      - we can have n  number non-primitive datatype. not fixed size.
+      - In java every class name will acts as a u user defined non-primitive data type.
+      - class hello{} : Hello is non-primitive data type.
+    - Non-primitive variable.
+    - A variable which  used to store address or references of a block of memory or object is known as non-primitive variable.
+    - In java we can have n number of non-primitive variable.
+    - Inside a non-primitive variable we can store two things .
+       1. Address and references.
+       2. default value of non-primitive variable;
+# members of class
+  - any member which is declared in a class is called as member of clas
+  - Inside a class we can have two types of member 
+     1. static member 
+     2. non-static member
+  1. Static Member : A member which is declared inside a class which is prefix with static keyword is known as static  
+     member.
+     - In java we have following static member.
+     - 1. static method
+       2. static variable
+       3. static initializers
+     - Static Method : 
+       - A method which is declared inside a class prefix with static keyword is known as static method.
+       - It will  get its memory inside class static area that's why it is known as member of class.
+       - A block which belongs to static member is known as static context.
+       -    
+       -            public static void print(){
+                       static block 
+                        }
+       - we can access static method inside the static context same class directly.
+       - we can access static method inside the static context of same class with the help of class name and access operator.
+         1. Access operator : It is a binary operator.
+         2. It is used to access the member which is present in the particular memory location.
+
+  Ques :  Print differences of two consecutive prime number.
+  Ques :  write a java program to check whether a given number is perfect number or not. A perfect number is a number 
+         which factor of number sum is equal to its number itself;
+ 
