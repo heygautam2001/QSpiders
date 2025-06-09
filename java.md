@@ -784,8 +784,26 @@ address of a memory variable.
        - we can access static method inside the static context of same class with the help of class name and access operator.
          1. Access operator : It is a binary operator.
          2. It is used to access the member which is present in the particular memory location.
+         3. we can access method inside static context of different class with the help of class name and access operator.
+       - Static variable : 
+         1. A global variable which ius declared inside a class prefix with static keyword is known as static keyword.
+         2. It will gets its mem ory inside class static area.
+         3. Since all the static variable will gets its memory inside class static area, that's why it is known as class 
+            static variable
+         4. we can access static variable inside a static context of same class directly as well as with the help of class
+            name and access operator.
+         5. static variable wil be loaded inside a class static area with its default value.
+         6. We can access static variable inside a static context of different class with the help of class name and access operator.
+         7. We can have static variable and local variable with same name in this case highest priority will be given to local 
+            variable, but of you want to access static variable we have to use class and access operator. 
+         
 
   Ques :  Print differences of two consecutive prime number.
   Ques :  write a java program to check whether a given number is perfect number or not. A perfect number is a number 
          which factor of number sum is equal to its number itself;
+  Ques : write a java program to check whether a number is happy number or not.A  number is happy number if it reaches to one
+          aftrer getting the sum of sqaures of each digit
+
+       
+       
  
