@@ -787,7 +787,7 @@ address of a memory variable.
          3. we can access method inside static context of different class with the help of class name and access operator.
        - Static variable : 
          1. A global variable which ius declared inside a class prefix with static keyword is known as static keyword.
-         2. It will gets its mem ory inside class static area.
+         2. It will gets its memory inside class static area.
          3. Since all the static variable will gets its memory inside class static area, that's why it is known as class 
             static variable
          4. we can access static variable inside a static context of same class directly as well as with the help of class
@@ -800,10 +800,102 @@ address of a memory variable.
 
   Ques :  Print differences of two consecutive prime number.
   Ques :  write a java program to check whether a given number is perfect number or not. A perfect number is a number 
-         which factor of number sum is equal to its number itself;
-  Ques : write a java program to check whether a number is happy number or not.A  number is happy number if it reaches to one
-          aftrer getting the sum of sqaures of each digit
+          which factor of number sum is equal to its number itself;
+  Ques :  write a java program to check whether a number is happy number or not.A  number is happy number if it reaches to one
+          after getting the sum of sqaures of each digit
+
+
+# static initializers.
+ - It is used for the initializer purpose.
+ -      class A {
+        static int i = 10;  
+       }
+
+
+# static block
+- An anonymous block which is prefixed with static keyword , is known as static block.
+- It should be declared inside a class.
+- It will be executed during class loading process.
+- It will be executed only once.
+- If we have multiple static block it will be executed from top to bottom order.
+
+# characteristic of static method
+- No name 
+- No return typw.
+- As a programmer we cannot call it , it will be executed directly during the class loading process.
+- If we want to perform any task before the main method that should be return inside static block.
+
+# class loading process
+-  First we create a source file and after the successful compilation we will get .class file.
+-  JVM will convert .class file into binary and it will start loading it into the memory area , this process
+    is known as class loading process.
+- In class loading process first entire code . binary information laded into the method area.
+- If it contains any static method its reference will be copied into class static area.
+- If we have any static variable , it wll be loaded into class static area with its default value.
+- If we have static initializer it will be executed directly from top to bottom order.it completes class loading process.
+
+ ques: write a java program to check whether a number is neon number.A neon number is a positive integer where sum of digit 
+of a square of a number is equal to number itself.
+
+# Non-static member 
+- Any member which is declared inside a Class without prefixed with static keyword id known as non-static method.
+- In java we have following non-static member...
+- NON STATIC METHOD
+- NON STATIC VARIABLE
+- NON STATIC INITIALIZERS
+- CONSTRUCTOR
+- IMPORTANT POINTS RELATED TO NON-STATIC MEMBER
+- 1. ALL THE NON-STATIC MEMBER WILL BE ALLOCATED INSIDE AN OBJECT , SO WITHOUT OBJECT CREATION WE CANNOT ACCESS IT.
+  2. ALL THE NON-STATIC MEMBER WILL BE LOADED INSIDE AN OBJECT EVERY TIME WE CREATE AN OBJECT , OBJECT WILL BE CREATED 
+     INSIDE THE HEAP AREA.
+  3. EVERY OBJECT WILL HAVE A BUILT-IN REFERENCE OR ADDRESS.
+  4. IT(OBJECT) IS ALSO KNOWN AS INSTANCE OF CLASS.
+  5. THE PROCESS OF OBJECT CREATION IS KNOWN AS INSTANTIATION.
+
+# object 
+- it is a block of memory inside a heap area during the run time.
+- it follows dynamic memory allocation because it is created during run time.
+- syntax to crete an object ...
+- new classname()---> constructor.
+# new
+1. it is a keyword .
+2. it is a unary operator.
+3. it is used to create a block of memory inside the heap area during the run time.
+4. new keyword is used to dynamic memory allocation.
+5. The address of block  of memory which is created inside a heap area will be given in the following format
+   fullyQualifiedClassName@Hexadecimalvalue.
+6. This address will be return by new keyword.
+
+# constructor...
+  1. It is used to load all the non-static member inside the object.
+
+# Non-primitive data type...
+  1. It is user-defined data type which is used to store reference or address of an object.
+  2. It does not have fixed number.
+  3. In java every class will act as a user defined non-primitive data type.
+
+# Non-primitive variable/reference variable..
+  1. A variable which is used to store address and reference of an object is known as non-primitive variable.
+     Example : System s1; String s = null; car c ; Apple A = new Apple();
+
+# Non-static method
+1. Any method which is declared inside a class without prefixed with static keyword is known as non-static method.
+2. Non-static method will be loaded/allocation inside the object in heap area.
+3. A block which belongs to non-static member is known as non-static context.
+4. To access the non-static method inside the static context we need an object.
+5. It means to access non-static method object is required.
+6. we can access a non-static method inside non-static context of same class directly.
+7. we can access a non-static method inside a static or non-static context of different class with the help of object reference.
+8. we can access the static method with the help of object reference , we can also access static method inside a non-static context directly. 
+9. we can call static method inside a non-static method... 
+
+
+
+- Write a program to print gp series...
+- To check whether given number is automorphic or not . a number is called automorphic number  whose sqaure ends with the same digit.
+- 
+
 
        
-       
+
  
