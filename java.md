@@ -1059,7 +1059,7 @@ platform architecture etc.
      1. has-a relationship
      2. is-a relationship
      
-   # has-a relationship
+   # has-a relationship --- > Strong bonding
    - It is relationship between two object in which one object depending on the another object.
    - It is relationship between a whole object and a part of it.
    - example : Mobile has a battery.
@@ -1076,21 +1076,57 @@ platform architecture etc.
   - ---------HAS-A------------
   - Mobile <--------- Battery
 # How to achieve has-a relationship
- - To achieve has-a relationship first we need to create dependent class then depending class & we need to create 
-   an instance of dependent class inside  depending class , In such a way during the loading process of depending 
+ - To achieve has-a relationship first we need to create dependent class and then  depending on class & we need to create 
+   an instance of dependent class inside the depending on  class , In such a way during the loading process of depending 
    object , dependent object should be loaded first.
-# Types of Has-a relationship
+# Types of Has-a relationship / Association
 1. composition : tightly coupled
    - In this relationship one object is completely dependent on another object , without one object another object cannot
       survive.
    - Car and engine.
    - Human and heart.
 2. Aggregation : 
+  - In this one object will depend on the another , but without one object second can still survive.
+  - In this case dependent object will be created when it requires.
 
-   - In this one object will depend on the another , but without one object second can still survive.
-   - In this case dependent object will be created when it requires.
+   Ques : Create class  Car and create one more class wheel and establish has a relationship between them.
 
-    Ques : create class and create one more class wheel and establish has a relationship between them.
+# IS-A Relationship
+  - It is a relationship between two object in which one object acquires the properties and behaviour from another object .
+  - Example : Car is a Vehicle.
+  - Java is a programing language.
+  - Doctor is a person.
+  - Airtel is a sim-Card.
+  - Marker is a Pen.
+  - Toyota is a Company. 
+  - wrt to is a relationship there are two types of object.
+    1. Parent object : Ann object which provides its properties and behaviour to the another object is known as parent object.
+       it is also known as Base object or super object.
+    2. Child object : An object which acquires its properties and behaviour from another object is called Child object,
+       it is also known as sub and derived object.
+    3.  This relationship is similar as a relationship between parent and child.
+    4.  Is-A relationship emphasize on code reusability.
+    5.  It is a unidirectional relationship.
+    6.  It is used to achieve generalization.
+  
+# Inheritance :  
+  - It is one of the principle of object-oriented programing which is used to achieve is-A relationship.
+  - wrt to inheritance there are two types of class.
+  1. parent class : A class which provides its properties an d behaviour to the another class . it is also known as
+       super class or base class. 
+  2. Child Class : A class which acquires properties and behaviour from the another class is known as child class , it is also 
+     known as sub class or derived class.
+  3. it is represented with the help of solid arrow , head of the arrow will points towards parent class and tails points the 
+   child class.
+  4. In java we can achieve inheritance with the help of extends keyword.
+
+           class ParentClassName{
+          }
+          class childClassName extends ParentClassName{}
+
+          class Car {}
+  
+          class HondaCity extends Car{}
 
 
 
