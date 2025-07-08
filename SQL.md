@@ -31,10 +31,10 @@
  - 2. file : Non-structured   
 
 4. DBMS is a software which is used to maintain and manage the database
-   1. The DBMS stores data int the either table format or file format 
+   1. The DBMS stores data in the form of either table format or file format 
    2. Table -> Structured
    3. File -> Non-Structured
-- since the DBMS is a software to interact with this we have to pass the comment -> communication : that should ber in the form 
+- since the DBMS is a software to interact with this we have to pass the comment -> communication : that should be in the form 
 - of either sql or n0-sql
 - Basically there are 5 types of DBMS
   1. NDBMS - Network Database Management System.
@@ -47,7 +47,7 @@
 ## History of sql
   - 1979 Invented --> sequel
   - Invented by IBM
-  - In 1981 oracle corporation's one person renames it as SQl(EF CODD ) 
+  - In 1981 oracle corporation's one person renames it as SQL(EF CODD ) 
   - The father of sequel F. Boycee , D . chamberlin
 
 

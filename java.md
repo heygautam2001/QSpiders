@@ -267,7 +267,7 @@ platform architecture etc.
    - A variable which is used to store primitive variable. primitive variable has fixed size.
    - ex : int a = 2 , byte b = 23 , float f = 2.6 ,  double a = 123.56845 
 
-   # Non primitive varible 
+   # Non-primitive variable 
    - it is used to store multi-value data
    - it is a user defined - it is created with the help of non-primitive data type.
    - Ex : Array , String , Object - syntax -> String s = null;
@@ -336,7 +336,7 @@ platform architecture etc.
  - it is a unary operator 
  - it is used to increase and decrease a value by one.
  - based on the position it is classified into two types.
- - Increament --> preIncrement , PostIncrement
+ - Increment --> preIncrement , PostIncrement
  - Decrement ---> postDecrement , preDecrement;
  - PostIncrement
    - it is a unary operator which is used to increase a value by one
@@ -425,6 +425,7 @@ platform architecture etc.
         int a = 23;
         int b = 12;
         a >= b ? System.out.println("a is greater") : System.out.println("b is greater");
+
  -  write a java program to check whether a given number is even or odd.
         
         int a = 5;
@@ -435,10 +436,10 @@ platform architecture etc.
 - when you want to take last digit of any number then we have to take its modulus by 10.
 
 # TYPE CASTING
-  - The process of cionverting one type of data into another type of  data is known as typecasting.
+  - The process of converting one type of data into another type of  data is known as typecasting.
   - We have two types ---> primitive typecasting ----> Non-primitive.
       primitive ---> 1. widening 2. narrowing 
-  -   Non primitive ----> 1.upcasting 2. down-casting 
+  -   Non-primitive ----> 1.upcasting 2. down-casting 
   - Primitive typecasting                
      - The process of converting one type of primitive data into another type primitive data is known as 
        primitive typecasting.
@@ -476,6 +477,7 @@ platform architecture etc.
       print its square.
     - Ques : Write a program to print the number if it contains fraction value otherwise skip it.
     - Ques : Write a program to check whether a number 0 or not at the unit place ;
+    
 ## if else:
    - Both if and else are keyword
    - syntax :
@@ -551,6 +553,7 @@ platform architecture etc.
          .
          default : //java statement
         }
+
  - inside switch we can pass byte , short , int , char and string typeof value, but we cannot pass float , double , long
    and boolean type of value
  - int the case we have to pass constant value , it means we cannot pass a variable also.
@@ -635,7 +638,7 @@ platform architecture etc.
   - whenever we execute our java program JVM will first call the main method for the execution of 
     this method a frame will br created in the stack area.When it encounters any method call statement
     control will transfer from the caller to the called method and execution of the caller will be paused.
-  - Execution of call method will start from the begining.After completion of the execution control
+  - Execution of call method will start from the beginning.After completion of the execution control
     will go back to the caller & execution of caller will be resumed.
 
 # * Drawbacks of no argument methods...
@@ -691,7 +694,7 @@ platform architecture etc.
 - It was introduced in jdk 5.
 - This ,method is capable of receiving multiple number of actual argument.
 - syntax:
--                [modifiers] returntype method_name(Datatype... identify)
+-                [modifiers] returntype method_name(Datatype... identifierName)
                    {
                      
                    }
@@ -700,7 +703,7 @@ platform architecture etc.
                     }
 
 - if in a class we have two ,method with same name , and one method is variable argument method , if we call the method by
-  by passing ame type of actual data in this case highest priority given to the same type of method.
+  by passing same type of actual data in this case highest priority given to the same type of method.
 # Rules of var-args method
   - In var-args method variable type of method must be declared at the last.
                
@@ -715,9 +718,9 @@ platform architecture etc.
 - write a java program to return sum of factors of a integer number...execluding the given number
 
 # # OOPS (OBJECT ORIENTED PROGRAMING).
-1. Object Oriented Programing is a new style of programming in which we consider every real world entity in form of object.
+1. Object-Oriented Programing is a new style of programming in which we consider every real world entity in form of object.
 2. Object : It is a real world entity which has its own properties and behaviours , functionality.
-3. characteristic of an object..
+3. characteristic of an object.
    - An object has a name.
    - An object has a properties.
    - An object has a behaviors.
@@ -869,6 +872,7 @@ platform architecture etc.
   1. It is used to load all the non-static member inside the object.
 
 # Non-primitive data type...
+
   1. It is user-defined data type which is used to store reference or address of an object.
   2. It does not have fixed number.
   3. In java every class will act as a user defined non-primitive data type.
@@ -916,6 +920,7 @@ platform architecture etc.
   - Note : if we have non-static variable and local variable with the same name in this cse highest priority given to the 
     local variable  , but if you want to access non-static variable inside a non-static context then we have to use this 
     keyword.
+
 # constructor
   - it a special non-static member which is used to load and initialize a non-static member inside an object. 
   - it is used to create an object along with new operator.
@@ -999,6 +1004,8 @@ platform architecture etc.
   - Java BIN is a stongly encapsulated class...
 
 # Advantages of Encapsulation
+
+
   - Data Hiding
   - We can achieve authentication , ----> verify the credential..
   - We can achieve authorization , ----> 
@@ -1035,10 +1042,10 @@ platform architecture etc.
     2. Points related to setter method.
        - It should be public .
        - Its return type should be void.
-       - It should be parametrised methid.
-       - It sholud be prefix with set .
+       - It should be parametrised method.
+       - It should be prefix with set .
        - It is non--static.
-       - fomal argument type of parametrised method depends on the data type of private member.
+       - formal argument type of parametrised method depends on the data type of private member.
        - Syntax : public void setPrivateMemberName(privateMemberDatatype privateMemberName){
         this.privateMemberName = privateMemberName;
        }
@@ -1163,6 +1170,127 @@ platform architecture etc.
   - It is used to access the member of parent class inside the child class.
   - It can be only used inside the non-static context.
 
+# Non-primitive TypeCasting
+ - The process of converting one type of non-primitive data into another type of non-primitive data,is known as non-primitive typeCasting:
+ - it has two type: 
+   1. UpCasting : 
+    
+      - The process of converting child type of reference into parent type of reference is known as up-casting.
+      - It is done by the compiler implicitly.
+      - As a programmer we don't need to explicitly convert it.
+      - Advantages of upcasting
+        - it is used to achieve generalization. parent type of reference variable will act as a generalization container
+          in which we can store any of the child class object.
+        - It is used to achieve loose coupling.
+        - loose coupling : In object-oriented programing coupling refers association between two object.
+        - Loose coupling refers/means independency between two object , if we crete a reference variable of parent type,
+          then its not mandatory , we have to store specific child object inside it , we can store any of the
+           child class object.
+        - 
+   2. Downcasting
+   - The process of converting parent type of refrerence into child type is known as down-casting.
+   - It is done by the compiler implicitly we have to do iot explicitly with the help of type-cast operator
+   - Down-casting is used to overcome the drawback of up-casting...
+   - Disadvantages of Upcasting
+     - In Upcasted scenario with the help of parent class reference we cannot access the child class member...
+  3. Class cast exception
+    - it occurs during runtime.
+    - it occurs when we try to 
+      but parent doiesnit any instance of child.
+     - if without upscting we try to downacsting we get classCastException ....
+
+  4. instanceof 
+    - it is a keyword .
+    - It is a binary operator.
+    - It is usded to checkk whether a reference having an instance of particuklar class or not,
+    - Its return type is boolean.
+    - We can avoid class cast exception by using it.    
+    - Syantax : ref.var instanceof className;
+# Types of Inheritance
+1. Single level Inheritance
+2. Multilevel Inheritance
+3. Multiple inheritance
+4. Hierarchical Inheritance.
+5. Hybrid Inheritance.
+
+# Single leval inheritance...
+  - An inheritance which contains only one level is known as single level inheritance.
+  - Example : pen and Digital pen , Room and classRoom , vehicle and Car
+
+           vehicle <----(Extends)----- car
+           Person <--------(Extends)----Programmer
+              
+
+# Multilevel Inheritance
+  - An inheritance which contains more than one level is known as Multilevel Inheritance.
+  - Animal <---(extends)---- PetAnimal <-----(extends)----- Dog <----(extends)--- Bull Dog
+
+
+# Multiple Inheritance 
+
+  - An inheritance in which one child is having more than one parent at a same level , is known as multiple inheritance.
+  - bowler(parent) batsman(parent)and allrounder(child)
+  - OPPO(parent) VIVO(parent) and OnePlus(Child);
+  - Why java does not multiple inheritance wrt class...
+    1. java does not support multiple inheritance wrt class , beacuse its leads to us diamond probleum.
+    Diamond problem : if one class is having multiple parent at the same level and we crete an objet of child class inside a constructor of child class first statement will be super call statement. Here compliler which get confused which class constructor should i call, it is creating here an ambiguity probleum.
+
+    If both the parent class is haviong methid with same signature we invoke it from the child class then again comopiler will get consfused. which method should i call , which again creates an ambuiguity problem... that's  calles diamond problem.
+
+# Hierarchical Inheritance
+  - An inheritance in which one parent is more than one child is known as hierarchical Inheritance.
+  - Animal <--- Dog 
+
+ # Hybrid Inheritance 
+   - An inheritance which is the combination of more than one inheritamnce is known as hybrid Inheritance.
+   Indoor game outdoor game cricket , football , badminton...
+
+# POLYMORPHISM ------>
+  - It is an abilioty iof an entity to show multiplwe forms 
+  - Example : A peron is showing diffeernt differnt forms as a tuident , prefessional programmer , Developer , son and daughter .
+  - Derived from two words
+     poly ----> means many 
+     morphs --- > many
+  - In java we can acghiuve polymorphism in two ways compile time , run time ...
+
+# Compile time polymorphism...
+  - In compile time polymorphism which implemention of a member/method is excuted is decided by   
+  2. Constructor Overloading.
+  - In method overloading compiler will decide which method will be executed based on the type of formal and actual argument..
+
+# shadowing
+  1. shadowing : if both parent class and child class is having the member of same name then the presence of childs calss will act as a shadow , it means it will hide the parent class member , but oarenmt class member is vittually present inside the child class.
+   
+
+      Example : class A {
+        static int i = 10;
+      }
+      class B extends A {
+        static int i = 20; // Do comment Uncomment.
+
+        psvm{
+
+          sopln(i) // 20;
+          sopln(A.i) // 10
+
+        }
+      }
+  1. Variable Shadowing : if both parent class and subcalss is having variable with same name wheteher it is static or non-static is known as variable shadowing. In variable shadowing which variable will be executed depends upon place of usage , type of reference variable create.
+
+  2. Method shadoeing : if both superclass and subclass having a method with same signature is known as Method shadowing.
+    - There must be is-A relatioship between the class , means 
+    - Both parent class and child class should have the same method signature.
+    - Method should be static.
+    - Both parent class and child class should have same return type. 
+    - Child class method should have equal and higher visibilty.
+    - Order of visibility
+      private < Default < protected < public 
+
+
+  
+
+    
+    
 
 
   
