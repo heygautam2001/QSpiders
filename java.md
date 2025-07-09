@@ -1277,16 +1277,59 @@ platform architecture etc.
       }
   1. Variable Shadowing : if both parent class and subcalss is having variable with same name wheteher it is static or non-static is known as variable shadowing. In variable shadowing which variable will be executed depends upon place of usage , type of reference variable create.
 
-  2. Method shadoeing : if both superclass and subclass having a method with same signature is known as Method shadowing.
-    - There must be is-A relatioship between the class , means 
+  2. Method shadowing : if both superclass and subclass having a method with same signature is known as Method shadowing.
+    - There must be is-A relationship between the class , means 
     - Both parent class and child class should have the same method signature.
     - Method should be static.
-    - Both parent class and child class should have same return type. 
+    - Both  class and child class should have same return tparentype. 
     - Child class method should have equal and higher visibilty.
     - Order of visibility
+3. 
       private < Default < protected < public 
 
+# Runtime polymorphism......
+ - In Runtime polymorphism which implementation of member will get executed it decided during the runtime.
+ - It means here during the runtime binding b/w method call method declaration will change thats whi it is 
+   called as runtime polymorphism. Another name is Dynamic method dispatching.
+ - example : Method overriding.
 
+# Method overriding
+
+ - The process of changing the implementation of parent class method inside the subclass  is known was method overriding.
+ - Also known Dynamic method Dispatch.
+ - rules of method overriding is same as rules of method shadowing but here method should be non-static.
+   1. There is Is-A relationship b/w parent and child element.
+   2. Both child class and parent class have the same method signature.
+   3. Method should be non-static.
+   4. Both class and child class should have same return type as parent . 
+   5. Child class method should have equal and higher visibility.
+      Order of visibility.
+   6. 
+
+   - create a class employee , and create a subclass part-time employee and full-time Employee.And override the 
+    calculate salary method.  number of  hours , incentive and bonus.
+
+# abstraction 
+  - It is one of the principle of OPPS which states hide the unnecessary details or implementation 
+    and only show the essential detail and information .
+  - In java we can achieve abstraction in two ways.
+    1. Abstract class.
+    2. Interface
+       1. with the help of abstract class : 
+          - it is a keyword
+          - it is a non access modifier.
+          - any member which is prefixed with abstract keyword is known as abstract member.
+          - variable cannot be abstract.
+          - with respect abstract we have two types of method
+            1. concreate method : A method which has its method implementation or method body.
+            
+                   public class dummy{
+            
+                      public void m1(){} // Exmaple : main method
+            
+                   }
+            
+            2. abstract Method : A 
   
 
     
